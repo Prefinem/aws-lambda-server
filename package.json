@@ -1,0 +1,40 @@
+{
+	"dependencies": {
+		"binary-case": "^1.1.4"
+	},
+	"description": "Run a node webserver on AWS Lambda!",
+	"devDependencies": {
+		"eslint": "^6.8.0",
+		"eslint-config-prefinem": "^0.0.4",
+		"eslint-config-prettier": "^6.10.0",
+		"eslint-plugin-babel": "^5.3.0",
+		"eslint-plugin-jest": "^23.8.2",
+		"eslint-plugin-react": "^7.19.0",
+		"express": "^4.17.1",
+		"husky": "^4.2.3",
+		"jest": "^25.1.0",
+		"lint-staged": "^10.0.8",
+		"prettier": "^1.19.1"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"license": "MIT",
+	"lint-staged": {
+		"*.js": [
+			"eslint",
+			"prettier --write",
+			"jest"
+		]
+	},
+	"main": "src/index.js",
+	"name": "aws-lambda-server",
+	"scripts": {
+		"lint": "eslint src/*",
+		"prettify": "prettier src/* --write",
+		"test": "jest"
+	},
+	"version": "1.0.0"
+}
