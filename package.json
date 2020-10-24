@@ -5,7 +5,7 @@
 	},
 	"description": "Run a node webserver on AWS Lambda!",
 	"devDependencies": {
-		"eslint": "7.11.0",
+		"eslint": "7.12.0",
 		"eslint-config-prefinem": "0.0.4",
 		"eslint-config-prettier": "6.14.0",
 		"eslint-plugin-babel": "5.3.1",
