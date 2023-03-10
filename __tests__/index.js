@@ -42,6 +42,7 @@ test('basic test', async () => {
 			'content-type': 'text/html; charset=utf-8',
 			date: expect.any(String),
 			etag: expect.any(String),
+			'keep-alive': 'timeout=5',
 			'x-powered-by': 'Express',
 		},
 		isBase64Encoded: true,
